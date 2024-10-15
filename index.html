@@ -1,19 +1,99 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>My Personal Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Personal Website</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Hello World!</h1>
-  
-  <p>This is my first web page!</p>
-  
-  <button onclick="changeText()">Click me!</button>
-  
+  <!-- Main Content Section -->
+  <main>
+    <section id="home">
+      <h1>Hello, I'm Neena Varanasi</h1>
+      <p>Welcome to my personal website!</p>
+      <button onclick="changeText()">Click me!</button>
+      <p id="dynamicText">This is my first web page!</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <!-- Profile Image Placeholder -->
+        <div class="about-image">
+          <img src="headshot.JPG" alt="Your Photo" id="profile-picture">
+        </div>
+        <!-- About Me Text -->
+        <div class="about-text">
+          <p>I am a second-year student at the University of Texas majoring in Statistics & Data Science with a certificate in Elements of Computing. Additionally, I am a member of the Polymathic Scholars Honors Program through the College of Natural Sciences.</p>
+          <p>I am passionate about leveraging data science, AI, and machine learning to tackle real-world challenges and drive impactful solutions. With a focus on data analytics and problem-solving, I’m always eager to learn, innovate, and collaborate with others.</p>
+          <p>In my free time, I enjoy reading novels, playing soccer, and listening to music. Feel free to reach out at neena.varanasi@utexas.edu.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are some projects I've worked on:</p>
+      <div class="projects-container">
+        <!-- Project 1: Gene Expression Profiling -->
+        <div class="project-item">
+          <img src="healthcare.png" alt="Gene Expression Profiling in Glioblastoma">
+          <div class="overlay">
+            <div class="text">Developed a high-accuracy ML classifier using Python and bioinformatics tools to distinguish glioblastoma from control samples, improving early diagnosis and treatment by identifying key biomarkers through advanced statistical analysis.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Women in STEM App -->
+        <div class="project-item">
+          <img src="Women_In_STEM_Image.png" alt="Women in STEM App">
+          <div class="overlay">
+            <div class="text">Created an R Shiny app to visualize workforce demographics using census data, promoting gender diversity in STEM by providing actionable insights for advocacy groups through interactive data visualization.
+            <a href="https://qdrhsa-neena0-varanasi.shinyapps.io/Project3Neena/" target="_blank">Project Link</a> |
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Disaster Relief Tracker -->
+        <div class="project-item">
+          <img src="diaster.relief.jpg" alt="Disaster Relief Tracker">
+          <div class="overlay">
+            <div class="text">Built a logistic regression model in Python to predict needed relief supplies from social media data, optimizing resource allocation during emergencies.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Neena Varanasi. All rights reserved.</p>
+    <p>Connect with me on:
+      <a href="https://github.com/Neena05" target="_blank">GitHub</a> |
+      <a href="http://www.linkedin.com/in/neena-varanasi" target="_blank">Linkedin</a>
+    </p>
+  </footer>
 </body>
 
 </html>
